@@ -21,7 +21,8 @@
   "dependencies": {
     "lodash": "^4.17.5",
     "strapi": "3.0.0-alpha.17",
-    "strapi-hook-mongoose": "3.0.0-alpha.17"
+    "strapi-hook-mongoose": "3.0.0-alpha.17",
+    "strapi-upload-google-storage": "^3.0.0-alpha.14.3"
   },
   "author": {
     "name": "pierreburgy",

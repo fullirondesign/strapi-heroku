@@ -104,3 +104,4 @@ coverage
 web-client/.cache/
 web-client/.cache/redux-state.json
 web-client/src/pages/page-3.js
+web-client/.cache/*

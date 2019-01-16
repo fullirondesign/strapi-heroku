@@ -1,0 +1,1598 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bd4e4c3a98d315654b4d452f8e613a7b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "1fc32581-893a-55e8-8927-bcd667e2b700": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "1fc32581-893a-55e8-8927-bcd667e2b700",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "40f3e9640e3748557748f7343d7f94c9",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "a5079d69-ba80-53dc-82f9-0f440bd5448c": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "a5079d69-ba80-53dc-82f9-0f440bd5448c",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "07ce2ddfb5f3101a9090becd1ef8ffc6",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "f795702c-a3b8-5a88-88ee-5d06019d44fa": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "27130c7b96e1500a507dc83792ed0584",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "84dad27f-1d44-51fc-ac56-4db2e5222995": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "84dad27f-1d44-51fc-ac56-4db2e5222995",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2138cae95a514fef3cdf8ae575db3927",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "6f4b2fa9-66b5-5205-a03f-140005a2cfe5": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "id": "6f4b2fa9-66b5-5205-a03f-140005a2cfe5",
+      "name": "webpack-theme-component-shadowing",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "packageJson": {
+        "name": "webpack-theme-component-shadowing",
+        "description": "An internal Gatsby plugin which handles configuring webpack to ensure theme components fall back from the user's site to theme modules.",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Chris Biscardi <chris@christopherbiscardi.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7c93952d5b3458c6d9267ca3c45a071a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "1943ff2f-9c0c-558d-8d0c-006603e8106a": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-react-helmet",
+      "id": "1943ff2f-9c0c-558d-8d0c-006603e8106a",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "3.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "3.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "731b05b880d370bc5693695f5ff0ebb4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "f679ecf4-6f60-5a83-994c-669c736c58cf": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-strapi",
+      "id": "f679ecf4-6f60-5a83-994c-669c736c58cf",
+      "name": "gatsby-source-strapi",
+      "version": "0.0.6",
+      "pluginOptions": {
+        "plugins": [],
+        "apiURL": "http://localhost:1337",
+        "contentTypes": [
+          "post",
+          "user"
+        ]
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-strapi",
+      "packageJson": {
+        "name": "gatsby-source-strapi",
+        "description": "Gatsby source plugin for building websites using Strapi as a data source",
+        "version": "0.0.6",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin",
+          "strapi"
+        ],
+        "author": {
+          "email": "hi@strapi.io",
+          "name": "Strapi Solutions",
+          "url": "http://strapi.io"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
+            "name": "gatsby-node-helpers",
+            "version": "^0.3.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.39"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.11"
+          },
+          {
+            "name": "pluralize",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-async-to-generator",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-plugin-transform-runtime",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "^1.6.0"
+          },
+          {
+            "name": "pre-commit",
+            "version": "^1.2.2"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.5.3"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7b0e79ae1a2f5eb4f898bbe8e1238e0e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "5cb50cb0-313d-5f0e-8aa1-c8ffb6dbd8b1": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-filesystem",
+      "id": "5cb50cb0-313d-5f0e-8aa1-c8ffb6dbd8b1",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.12",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "images",
+        "path": "C:\\Users\\ilyafefelov\\Dropbox\\Code\\strapi-heroku\\good-ua\\web-client/src/images"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.12",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "file-type",
+            "version": "^10.2.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "read-chunk",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "99c3b26808e83624529bf01d6dda052d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-transformer-sharp",
+      "id": "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9",
+      "name": "gatsby-transformer-sharp",
+      "version": "2.1.9",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "2.1.9",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.33"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "81e50bc0e875a555f1fec873f395587a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "84d6154d-4241-556c-a679-cc8339cac100": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-sharp",
+      "id": "84d6154d-4241-556c-a679-cc8339cac100",
+      "name": "gatsby-plugin-sharp",
+      "version": "2.0.16",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreInit"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "2.0.16",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-mozjpeg",
+            "version": "^8.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.0"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7cfb9f73e52f2fa47e9f4029503f5357",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "112c12f8-b222-509b-abe0-dfe93a905df9": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-manifest",
+      "id": "112c12f8-b222-509b-abe0-dfe93a905df9",
+      "name": "gatsby-plugin-manifest",
+      "version": "2.0.12",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "gatsby-starter-default",
+        "short_name": "starter",
+        "start_url": "/",
+        "background_color": "#663399",
+        "theme_color": "#663399",
+        "display": "minimal-ui",
+        "icon": "src/images/gatsby-icon.png"
+      },
+      "nodeAPIs": [
+        "onPostBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "2.0.12",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "4322a463ac6a56a12627d011c419cefb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client",
+      "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "name": "default-site-plugin",
+      "version": "9e744c23aaa927cba6d766e23ea87f54",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client",
+      "packageJson": {
+        "name": "gatsby-starter-default",
+        "description": "A simple starter to get up and developing quickly with Gatsby",
+        "version": "0.1.0",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "copyfiles",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "dotenv",
+            "version": "^6.2.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.76"
+          },
+          {
+            "name": "gatsby-image",
+            "version": "^2.0.20"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^2.0.9"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^2.0.16"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^3.0.2"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.14"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.8"
+          },
+          {
+            "name": "gatsby-source-strapi",
+            "version": "0.0.6"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^2.1.8"
+          },
+          {
+            "name": "prop-types",
+            "version": "^15.6.2"
+          },
+          {
+            "name": "react",
+            "version": "^16.6.3"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.6.3"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "prettier",
+            "version": "^1.15.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3ac4470b77fd0504fba519d5e6988f49",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "79ca699c-62ad-53f8-a3f8-c58f2fb26d07": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-page-creator",
+      "id": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "micromatch",
+            "version": "^3.1.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "19ad93f8fb65b73ce8db7a0e496d8746",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby Default Starter",
+        "description": "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
+        "author": "@gatsbyjs"
+      },
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-01-16T21:42:19.191Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ba3689551e43e21afec0bcf5e93cd857",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "5c3a3d6699aa8600177e0bde": {
+      "title": "1",
+      "content": "2",
+      "createdAt": "2019-01-12T19:17:58.844Z",
+      "updatedAt": "2019-01-12T19:17:58.879Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3a3d6699aa8600177e0bde",
+      "id": "5c3a3d6699aa8600177e0bde",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "1d5f9b7c14601d31441303d5ad427bd8",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43c6839964e054c8eeb8": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:14.883Z",
+      "updatedAt": "2019-01-15T20:34:15.039Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43c6839964e054c8eeb8",
+      "id": "5c3e43c6839964e054c8eeb8",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "973875c3561a5c6ddd91efaaa0ad7664",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43cf839964e054c8eeba": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:23.081Z",
+      "updatedAt": "2019-01-15T20:34:23.235Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43cf839964e054c8eeba",
+      "id": "5c3e43cf839964e054c8eeba",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "2ed86ac88f095532d318d1d1adc0f3fd",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43d5839964e054c8eebb": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:29.835Z",
+      "updatedAt": "2019-01-15T20:34:29.991Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43d5839964e054c8eebb",
+      "id": "5c3e43d5839964e054c8eebb",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "00b6c4df4c5acfecff38c1f1fa4586ce",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43da839964e054c8eebc": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:34.339Z",
+      "updatedAt": "2019-01-15T20:34:34.498Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43da839964e054c8eebc",
+      "id": "5c3e43da839964e054c8eebc",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "d47e8c8ab64713b8654fd2467051290b",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43dd839964e054c8eebd": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:37.863Z",
+      "updatedAt": "2019-01-15T20:34:38.024Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43dd839964e054c8eebd",
+      "id": "5c3e43dd839964e054c8eebd",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "4697756e8ef8454c5fdd4b11fbb48476",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43ff839964e054c8eebe": {
+      "title": "test3",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:35:11.195Z",
+      "updatedAt": "2019-01-15T20:36:00.752Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43ff839964e054c8eebe",
+      "id": "5c3e43ff839964e054c8eebe",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "8907abae468a0b54552e7028af246a76",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e448f57d6a300175b97f3": {
+      "title": "s4",
+      "content": "test s4 text",
+      "createdAt": "2019-01-15T20:37:35.097Z",
+      "updatedAt": "2019-01-15T20:37:35.115Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e448f57d6a300175b97f3",
+      "id": "5c3e448f57d6a300175b97f3",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "319b48f79c796b5ac1db3ff72d873769",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e521ccd3da9d7e83498a6": {
+      "title": "4",
+      "content": "4",
+      "createdAt": "2019-01-15T21:35:24.731Z",
+      "updatedAt": "2019-01-15T21:35:24.892Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e521ccd3da9d7e83498a6",
+      "id": "5c3e521ccd3da9d7e83498a6",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "b8429e7cd14c245902d39e05cbdd8fea",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3fa1470e8e860b31317aeb": {
+      "title": "5",
+      "content": "5",
+      "createdAt": "2019-01-16T21:25:27.317Z",
+      "updatedAt": "2019-01-16T21:25:27.492Z",
+      "cover": {
+        "name": "full.iron.logo.2016.png",
+        "sha256": "ApGj4tStwchi8hSyTPBZJ9CgdMWRUMM1BiDA6pInRlU",
+        "hash": "7f51e668a6774c91a45b7b8b729551c9",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": "1868.90",
+        "url": "https://storage.googleapis.com/good-ua/7f51e668a6774c91a45b7b8b729551c9.png",
+        "provider": "google-cloud-storage",
+        "related": [
+          "5c3fa1470e8e860b31317aeb"
+        ],
+        "createdAt": "2019-01-16T21:25:29.223Z",
+        "updatedAt": "2019-01-16T21:25:29.339Z",
+        "id": "5c3fa1490e8e860b31317aec"
+      },
+      "tags": [],
+      "strapiId": "5c3fa1470e8e860b31317aeb",
+      "id": "5c3fa1470e8e860b31317aeb",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "71e677051540d9f2d3ff8f4eee5ca7d5",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3a3d4699aa8600177e0bdd": {
+      "confirmed": true,
+      "blocked": false,
+      "username": "root",
+      "email": "ilyafefelov@gmail.com",
+      "provider": "local",
+      "role": {
+        "name": "Administrator",
+        "description": "These users have all access in the project.",
+        "type": "root",
+        "id": "5c3a25f107e6b70017cb20db"
+      },
+      "strapiId": "5c3a3d4699aa8600177e0bdd",
+      "id": "5c3a3d4699aa8600177e0bdd",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiUser",
+        "contentDigest": "89722e78a547406e42bb95afd1705e36",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "ec92c6eb-189d-50ad-9d26-506c9e956063": {
+      "id": "ec92c6eb-189d-50ad-9d26-506c9e956063",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b886f610bd26ba8acb5c67c4602a6292",
+        "type": "Directory",
+        "description": "Directory \"src\\images\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "relativePath": "",
+      "extension": "",
+      "size": 0,
+      "prettySize": "0 B",
+      "modifiedTime": "2019-01-16T20:10:50.415Z",
+      "accessTime": "2019-01-16T21:42:57.634Z",
+      "changeTime": "2019-01-16T20:15:26.031Z",
+      "birthTime": "2019-01-16T20:10:50.401Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src",
+      "base": "images",
+      "ext": "",
+      "name": "images",
+      "relativeDirectory": "..",
+      "dev": 3028099488,
+      "mode": 16822,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102534,
+      "atimeMs": 1547674977633.5032,
+      "mtimeMs": 1547669450414.5479,
+      "ctimeMs": 1547669726031.1084,
+      "birthtimeMs": 1547669450400.5835,
+      "atime": "2019-01-16T21:42:57.634Z",
+      "mtime": "2019-01-16T20:10:50.415Z",
+      "ctime": "2019-01-16T20:15:26.031Z",
+      "birthtime": "2019-01-16T20:10:50.401Z"
+    },
+    "77eb67a8-a7df-5636-9a76-e063076dabe1": {
+      "id": "77eb67a8-a7df-5636-9a76-e063076dabe1",
+      "children": [
+        "66e2758a-8a25-5391-b1f4-1a45bfa5af03"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src\\images\\gatsby-icon.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-icon.png",
+      "relativePath": "gatsby-icon.png",
+      "extension": "png",
+      "size": 21212,
+      "prettySize": "21.2 kB",
+      "modifiedTime": "2019-01-16T20:10:50.419Z",
+      "accessTime": "2019-01-16T21:40:15.291Z",
+      "changeTime": "2019-01-16T20:15:26.204Z",
+      "birthTime": "2019-01-16T20:10:50.415Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "base": "gatsby-icon.png",
+      "ext": ".png",
+      "name": "gatsby-icon",
+      "relativeDirectory": "",
+      "dev": 3028099488,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102536,
+      "atimeMs": 1547674815290.933,
+      "mtimeMs": 1547669450418.5356,
+      "ctimeMs": 1547669726203.648,
+      "birthtimeMs": 1547669450414.5479,
+      "atime": "2019-01-16T21:40:15.291Z",
+      "mtime": "2019-01-16T20:10:50.419Z",
+      "ctime": "2019-01-16T20:15:26.204Z",
+      "birthtime": "2019-01-16T20:10:50.415Z"
+    },
+    "66e2758a-8a25-5391-b1f4-1a45bfa5af03": {
+      "id": "66e2758a-8a25-5391-b1f4-1a45bfa5af03",
+      "children": [],
+      "parent": "77eb67a8-a7df-5636-9a76-e063076dabe1",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "ace22f35-1f42-521a-a856-0a71b2622d45": {
+      "id": "ace22f35-1f42-521a-a856-0a71b2622d45",
+      "children": [
+        "7f37dcfa-49a3-54a7-beb0-1c7920813cd9"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src\\images\\gatsby-astronaut.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-astronaut.png",
+      "relativePath": "gatsby-astronaut.png",
+      "extension": "png",
+      "size": 167273,
+      "prettySize": "167 kB",
+      "modifiedTime": "2019-01-16T20:10:50.411Z",
+      "accessTime": "2019-01-16T21:40:15.060Z",
+      "changeTime": "2019-01-16T20:15:26.117Z",
+      "birthTime": "2019-01-16T20:10:50.406Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "base": "gatsby-astronaut.png",
+      "ext": ".png",
+      "name": "gatsby-astronaut",
+      "relativeDirectory": "",
+      "dev": 3028099488,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102535,
+      "atimeMs": 1547674815059.5508,
+      "mtimeMs": 1547669450410.5583,
+      "ctimeMs": 1547669726116.8792,
+      "birthtimeMs": 1547669450405.572,
+      "atime": "2019-01-16T21:40:15.060Z",
+      "mtime": "2019-01-16T20:10:50.411Z",
+      "ctime": "2019-01-16T20:15:26.117Z",
+      "birthtime": "2019-01-16T20:10:50.406Z"
+    },
+    "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": {
+      "id": "7f37dcfa-49a3-54a7-beb0-1c7920813cd9",
+      "children": [],
+      "parent": "ace22f35-1f42-521a-a856-0a71b2622d45",
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /404/": {
+      "jsonName": "404-22d",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4f19e682b12c4cb920a6356cd0489685",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a8faaedf8647fb4c9521b232f3dbb6af",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-2/": {
+      "jsonName": "page-2-fbc",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page-2/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js",
+      "componentChunkName": "component---src-pages-page-2-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js",
+      "id": "SitePage /page-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bc916cb9aa922753be4b7c6cc20544c2",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-3/": {
+      "jsonName": "page-3-74c",
+      "internalComponentName": "ComponentPage3",
+      "path": "/page-3/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js",
+      "componentChunkName": "component---src-pages-page-3-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js",
+      "id": "SitePage /page-3/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "256b8edc7a4defaee1d85ae703775eb8",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2e96a5bf00ebacb99a5e9daa11669d2c",
+        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "1bcbab48439e87782c59445798ecf30b"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "sq--src-components-layout-js",
+        "sq--src-components-seo-js"
+      ],
+      "ace22f35-1f42-521a-a856-0a71b2622d45": [
+        "sq--src-components-image-js",
+        "/page-2/"
+      ],
+      "77eb67a8-a7df-5636-9a76-e063076dabe1": [
+        "/page-2/"
+      ],
+      "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": [
+        "sq--src-components-image-js"
+      ]
+    },
+    "connections": {
+      "File": [
+        "/page-2/"
+      ],
+      "StrapiPost": [
+        "/page-3/"
+      ]
+    }
+  },
+  "jsonDataPaths": {
+    "sq--src-components-seo-js": 1025518380,
+    "sq--src-components-layout-js": 755544856,
+    "page-2-fbc": "838/path---page-2-fbc-5a8-KxTfjkeP7w1IrW0k6CYbOxZyo",
+    "page-3-74c": "451/path---page-3-74-c-e74-jwuzVux8eT0SfFbEEDgntTt9U",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "sq--src-components-image-js": 2011440971
+  },
+  "components": {
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js": {
+      "query": "",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js": {
+      "query": "",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js": {
+      "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPage2Js102664242 {\n  allFile {\n    edges {\n      node {\n        publicURL\n        prettySize\n        extension\n        birthTime(fromNow: true)\n      }\n    }\n  }\n}\n",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js": {
+      "query": "query IndexQuery {\n  allStrapiPost {\n    edges {\n      node {\n        id\n        title\n        content\n      }\n    }\n  }\n}\n",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js"
+    }
+  },
+  "staticQueryComponents": {
+    "sq--src-components-image-js": {
+      "name": "cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcComponentsImageJs2011440971",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/image.js",
+      "id": "sq--src-components-image-js",
+      "jsonName": "sq--src-components-image-js",
+      "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "hash": 2011440971
+    },
+    "sq--src-components-layout-js": {
+      "name": "SiteTitleQuery",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/layout.js",
+      "id": "sq--src-components-layout-js",
+      "jsonName": "sq--src-components-layout-js",
+      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
+      "hash": 755544856
+    },
+    "sq--src-components-seo-js": {
+      "name": "DefaultSEOQuery",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/seo.js",
+      "id": "sq--src-components-seo-js",
+      "jsonName": "sq--src-components-seo-js",
+      "query": "query DefaultSEOQuery {\n  site {\n    siteMetadata {\n      title\n      description\n      author\n    }\n  }\n}\n",
+      "hash": 1025518380
+    }
+  }
+}

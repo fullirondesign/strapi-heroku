@@ -1,22 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "jsonName": "dev-404-page-5f9",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "17dc90137f3ed2ae998e868c22fb8423",
-        "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -266,10 +257,7 @@
           "noscript",
           "style"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "matthews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -346,8 +334,8 @@
           "strapi"
         ],
         "author": {
-          "name": "Strapi Solutions",
           "email": "hi@strapi.io",
+          "name": "Strapi Solutions",
           "url": "http://strapi.io"
         },
         "license": "MIT",
@@ -440,10 +428,7 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -564,10 +549,7 @@
           "image",
           "sharp"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -659,10 +641,7 @@
           "image",
           "sharp"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -802,10 +781,7 @@
           "progressive-web-app",
           "pwa"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -860,7 +836,7 @@
       "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "85efacb6172638641394b637f2ce52d6",
+      "version": "9e744c23aaa927cba6d766e23ea87f54",
       "pluginOptions": {
         "plugins": []
       },
@@ -952,7 +928,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "659b0e87c38320c57b3fb271d8fcf408",
+        "contentDigest": "3ac4470b77fd0504fba519d5e6988f49",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -982,10 +958,7 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -1066,170 +1039,16 @@
         "description": "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
         "author": "@gatsbyjs"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-16T19:45:52.094Z",
+      "buildTime": "2019-01-16T21:42:19.191Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d8dcf378e1ad034a194c234faa3973f8",
+        "contentDigest": "ba3689551e43e21afec0bcf5e93cd857",
         "type": "Site",
         "owner": "internal-data-bridge"
-      }
-    },
-    "ec92c6eb-189d-50ad-9d26-506c9e956063": {
-      "id": "ec92c6eb-189d-50ad-9d26-506c9e956063",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "a52d3183ff1f5f84ccbe2a8383cb5822",
-        "type": "Directory",
-        "description": "Directory \"src\\images\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "images",
-      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
-      "relativePath": "",
-      "extension": "",
-      "size": 0,
-      "prettySize": "0 B",
-      "modifiedTime": "2019-01-16T11:20:56.136Z",
-      "accessTime": "2019-01-16T19:46:01.544Z",
-      "changeTime": "2019-01-16T11:20:57.693Z",
-      "birthTime": "2019-01-16T11:20:56.133Z",
-      "root": "C:/",
-      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src",
-      "base": "images",
-      "ext": "",
-      "name": "images",
-      "relativeDirectory": "..",
-      "dev": 3028099488,
-      "mode": 16822,
-      "nlink": 1,
-      "uid": 0,
-      "gid": 0,
-      "rdev": 0,
-      "ino": 281474977383821,
-      "atimeMs": 1547667961544.0361,
-      "mtimeMs": 1547637656135.5952,
-      "ctimeMs": 1547637657693.2036,
-      "birthtimeMs": 1547637656132.604,
-      "atime": "2019-01-16T19:46:01.544Z",
-      "mtime": "2019-01-16T11:20:56.136Z",
-      "ctime": "2019-01-16T11:20:57.693Z",
-      "birthtime": "2019-01-16T11:20:56.133Z"
-    },
-    "77eb67a8-a7df-5636-9a76-e063076dabe1": {
-      "id": "77eb67a8-a7df-5636-9a76-e063076dabe1",
-      "children": [
-        "66e2758a-8a25-5391-b1f4-1a45bfa5af03"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
-        "type": "File",
-        "mediaType": "image/png",
-        "description": "File \"src\\images\\gatsby-icon.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "images",
-      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-icon.png",
-      "relativePath": "gatsby-icon.png",
-      "extension": "png",
-      "size": 21212,
-      "prettySize": "21.2 kB",
-      "modifiedTime": "2019-01-16T11:20:56.137Z",
-      "accessTime": "2019-01-16T19:29:48.611Z",
-      "changeTime": "2019-01-16T11:20:57.775Z",
-      "birthTime": "2019-01-16T11:20:56.136Z",
-      "root": "C:/",
-      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
-      "base": "gatsby-icon.png",
-      "ext": ".png",
-      "name": "gatsby-icon",
-      "relativeDirectory": "",
-      "dev": 3028099488,
-      "mode": 33206,
-      "nlink": 1,
-      "uid": 0,
-      "gid": 0,
-      "rdev": 0,
-      "ino": 281474977383823,
-      "atimeMs": 1547666988610.8088,
-      "mtimeMs": 1547637656136.5923,
-      "ctimeMs": 1547637657775.1763,
-      "birthtimeMs": 1547637656135.5952,
-      "atime": "2019-01-16T19:29:48.611Z",
-      "mtime": "2019-01-16T11:20:56.137Z",
-      "ctime": "2019-01-16T11:20:57.775Z",
-      "birthtime": "2019-01-16T11:20:56.136Z"
-    },
-    "66e2758a-8a25-5391-b1f4-1a45bfa5af03": {
-      "id": "66e2758a-8a25-5391-b1f4-1a45bfa5af03",
-      "children": [],
-      "parent": "77eb67a8-a7df-5636-9a76-e063076dabe1",
-      "internal": {
-        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "ace22f35-1f42-521a-a856-0a71b2622d45": {
-      "id": "ace22f35-1f42-521a-a856-0a71b2622d45",
-      "children": [
-        "7f37dcfa-49a3-54a7-beb0-1c7920813cd9"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
-        "type": "File",
-        "mediaType": "image/png",
-        "description": "File \"src\\images\\gatsby-astronaut.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "images",
-      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-astronaut.png",
-      "relativePath": "gatsby-astronaut.png",
-      "extension": "png",
-      "size": 167273,
-      "prettySize": "167 kB",
-      "modifiedTime": "2019-01-16T11:20:56.135Z",
-      "accessTime": "2019-01-16T19:33:11.534Z",
-      "changeTime": "2019-01-16T11:20:57.738Z",
-      "birthTime": "2019-01-16T11:20:56.135Z",
-      "root": "C:/",
-      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
-      "base": "gatsby-astronaut.png",
-      "ext": ".png",
-      "name": "gatsby-astronaut",
-      "relativeDirectory": "",
-      "dev": 3028099488,
-      "mode": 33206,
-      "nlink": 1,
-      "uid": 0,
-      "gid": 0,
-      "rdev": 0,
-      "ino": 281474977383822,
-      "atimeMs": 1547667191533.5603,
-      "mtimeMs": 1547637656134.598,
-      "ctimeMs": 1547637657738.083,
-      "birthtimeMs": 1547637656134.598,
-      "atime": "2019-01-16T19:33:11.534Z",
-      "mtime": "2019-01-16T11:20:56.135Z",
-      "ctime": "2019-01-16T11:20:57.738Z",
-      "birthtime": "2019-01-16T11:20:56.135Z"
-    },
-    "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": {
-      "id": "7f37dcfa-49a3-54a7-beb0-1c7920813cd9",
-      "children": [],
-      "parent": "ace22f35-1f42-521a-a856-0a71b2622d45",
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
       }
     },
     "5c3a3d6699aa8600177e0bde": {
@@ -1385,6 +1204,38 @@
         "owner": "gatsby-source-strapi"
       }
     },
+    "5c3fa1470e8e860b31317aeb": {
+      "title": "5",
+      "content": "5",
+      "createdAt": "2019-01-16T21:25:27.317Z",
+      "updatedAt": "2019-01-16T21:25:27.492Z",
+      "cover": {
+        "name": "full.iron.logo.2016.png",
+        "sha256": "ApGj4tStwchi8hSyTPBZJ9CgdMWRUMM1BiDA6pInRlU",
+        "hash": "7f51e668a6774c91a45b7b8b729551c9",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": "1868.90",
+        "url": "https://storage.googleapis.com/good-ua/7f51e668a6774c91a45b7b8b729551c9.png",
+        "provider": "google-cloud-storage",
+        "related": [
+          "5c3fa1470e8e860b31317aeb"
+        ],
+        "createdAt": "2019-01-16T21:25:29.223Z",
+        "updatedAt": "2019-01-16T21:25:29.339Z",
+        "id": "5c3fa1490e8e860b31317aec"
+      },
+      "tags": [],
+      "strapiId": "5c3fa1470e8e860b31317aeb",
+      "id": "5c3fa1470e8e860b31317aeb",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "71e677051540d9f2d3ff8f4eee5ca7d5",
+        "owner": "gatsby-source-strapi"
+      }
+    },
     "5c3a3d4699aa8600177e0bdd": {
       "confirmed": true,
       "blocked": false,
@@ -1405,6 +1256,158 @@
         "type": "StrapiUser",
         "contentDigest": "89722e78a547406e42bb95afd1705e36",
         "owner": "gatsby-source-strapi"
+      }
+    },
+    "ec92c6eb-189d-50ad-9d26-506c9e956063": {
+      "id": "ec92c6eb-189d-50ad-9d26-506c9e956063",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b886f610bd26ba8acb5c67c4602a6292",
+        "type": "Directory",
+        "description": "Directory \"src\\images\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "relativePath": "",
+      "extension": "",
+      "size": 0,
+      "prettySize": "0 B",
+      "modifiedTime": "2019-01-16T20:10:50.415Z",
+      "accessTime": "2019-01-16T21:42:57.634Z",
+      "changeTime": "2019-01-16T20:15:26.031Z",
+      "birthTime": "2019-01-16T20:10:50.401Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src",
+      "base": "images",
+      "ext": "",
+      "name": "images",
+      "relativeDirectory": "..",
+      "dev": 3028099488,
+      "mode": 16822,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102534,
+      "atimeMs": 1547674977633.5032,
+      "mtimeMs": 1547669450414.5479,
+      "ctimeMs": 1547669726031.1084,
+      "birthtimeMs": 1547669450400.5835,
+      "atime": "2019-01-16T21:42:57.634Z",
+      "mtime": "2019-01-16T20:10:50.415Z",
+      "ctime": "2019-01-16T20:15:26.031Z",
+      "birthtime": "2019-01-16T20:10:50.401Z"
+    },
+    "77eb67a8-a7df-5636-9a76-e063076dabe1": {
+      "id": "77eb67a8-a7df-5636-9a76-e063076dabe1",
+      "children": [
+        "66e2758a-8a25-5391-b1f4-1a45bfa5af03"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src\\images\\gatsby-icon.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-icon.png",
+      "relativePath": "gatsby-icon.png",
+      "extension": "png",
+      "size": 21212,
+      "prettySize": "21.2 kB",
+      "modifiedTime": "2019-01-16T20:10:50.419Z",
+      "accessTime": "2019-01-16T21:40:15.291Z",
+      "changeTime": "2019-01-16T20:15:26.204Z",
+      "birthTime": "2019-01-16T20:10:50.415Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "base": "gatsby-icon.png",
+      "ext": ".png",
+      "name": "gatsby-icon",
+      "relativeDirectory": "",
+      "dev": 3028099488,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102536,
+      "atimeMs": 1547674815290.933,
+      "mtimeMs": 1547669450418.5356,
+      "ctimeMs": 1547669726203.648,
+      "birthtimeMs": 1547669450414.5479,
+      "atime": "2019-01-16T21:40:15.291Z",
+      "mtime": "2019-01-16T20:10:50.419Z",
+      "ctime": "2019-01-16T20:15:26.204Z",
+      "birthtime": "2019-01-16T20:10:50.415Z"
+    },
+    "66e2758a-8a25-5391-b1f4-1a45bfa5af03": {
+      "id": "66e2758a-8a25-5391-b1f4-1a45bfa5af03",
+      "children": [],
+      "parent": "77eb67a8-a7df-5636-9a76-e063076dabe1",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "ace22f35-1f42-521a-a856-0a71b2622d45": {
+      "id": "ace22f35-1f42-521a-a856-0a71b2622d45",
+      "children": [
+        "7f37dcfa-49a3-54a7-beb0-1c7920813cd9"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src\\images\\gatsby-astronaut.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images/gatsby-astronaut.png",
+      "relativePath": "gatsby-astronaut.png",
+      "extension": "png",
+      "size": 167273,
+      "prettySize": "167 kB",
+      "modifiedTime": "2019-01-16T20:10:50.411Z",
+      "accessTime": "2019-01-16T21:40:15.060Z",
+      "changeTime": "2019-01-16T20:15:26.117Z",
+      "birthTime": "2019-01-16T20:10:50.406Z",
+      "root": "C:/",
+      "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
+      "base": "gatsby-astronaut.png",
+      "ext": ".png",
+      "name": "gatsby-astronaut",
+      "relativeDirectory": "",
+      "dev": 3028099488,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949954102535,
+      "atimeMs": 1547674815059.5508,
+      "mtimeMs": 1547669450410.5583,
+      "ctimeMs": 1547669726116.8792,
+      "birthtimeMs": 1547669450405.572,
+      "atime": "2019-01-16T21:40:15.060Z",
+      "mtime": "2019-01-16T20:10:50.411Z",
+      "ctime": "2019-01-16T20:15:26.117Z",
+      "birthtime": "2019-01-16T20:10:50.406Z"
+    },
+    "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": {
+      "id": "7f37dcfa-49a3-54a7-beb0-1c7920813cd9",
+      "children": [],
+      "parent": "ace22f35-1f42-521a-a856-0a71b2622d45",
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
     "SitePage /404/": {
@@ -1510,22 +1513,20 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "57bd6ecbcc3403fac923cdd9baf1bcff"
+    "PLUGINS_HASH": "1bcbab48439e87782c59445798ecf30b"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "sq--src-components-seo-js",
-        "sq--src-components-layout-js"
+        "sq--src-components-layout-js",
+        "sq--src-components-seo-js"
       ],
       "ace22f35-1f42-521a-a856-0a71b2622d45": [
-        "/page-2/",
-        "/",
-        "sq--src-components-image-js"
+        "sq--src-components-image-js",
+        "/page-2/"
       ],
       "77eb67a8-a7df-5636-9a76-e063076dabe1": [
-        "/page-2/",
-        "/"
+        "/page-2/"
       ],
       "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": [
         "sq--src-components-image-js"
@@ -1533,31 +1534,24 @@
     },
     "connections": {
       "File": [
-        "/page-2/",
-        null
+        "/page-2/"
       ],
       "StrapiPost": [
-        null,
         "/page-3/"
       ]
     }
   },
   "jsonDataPaths": {
-    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
-    "page-2-fbc": "887/path---page-2-fbc-5a8-6C1YnbNzhnh2UKMc0WCh0qcMDw",
-    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
     "sq--src-components-seo-js": 1025518380,
     "sq--src-components-layout-js": 755544856,
-    "sq--src-components-image-js": 2011440971,
-    "page-3-74c": "127/path---page-3-74-c-e74-9xtzr8Zr80n2M6vkoynh9cJykU"
+    "page-2-fbc": "838/path---page-2-fbc-5a8-KxTfjkeP7w1IrW0k6CYbOxZyo",
+    "page-3-74c": "451/path---page-3-74-c-e74-jwuzVux8eT0SfFbEEDgntTt9U",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "sq--src-components-image-js": 2011440971
   },
   "components": {
-    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js": {
-      "query": "",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js"
-    },
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js": {
       "query": "",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js"
@@ -1584,14 +1578,6 @@
       "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcComponentsImageJs2011440971 {\n  placeholderImage: file(relativePath: {eq: \"gatsby-astronaut.png\"}) {\n    childImageSharp {\n      fluid(maxWidth: 300) {\n        ...GatsbyImageSharpFluid\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid on ImageSharpFluid {\n  base64\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
       "hash": 2011440971
     },
-    "sq--src-components-seo-js": {
-      "name": "DefaultSEOQuery",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/seo.js",
-      "id": "sq--src-components-seo-js",
-      "jsonName": "sq--src-components-seo-js",
-      "query": "query DefaultSEOQuery {\n  site {\n    siteMetadata {\n      title\n      description\n      author\n    }\n  }\n}\n",
-      "hash": 1025518380
-    },
     "sq--src-components-layout-js": {
       "name": "SiteTitleQuery",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/layout.js",
@@ -1599,6 +1585,14 @@
       "jsonName": "sq--src-components-layout-js",
       "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
       "hash": 755544856
+    },
+    "sq--src-components-seo-js": {
+      "name": "DefaultSEOQuery",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/seo.js",
+      "id": "sq--src-components-seo-js",
+      "jsonName": "sq--src-components-seo-js",
+      "query": "query DefaultSEOQuery {\n  site {\n    siteMetadata {\n      title\n      description\n      author\n    }\n  }\n}\n",
+      "hash": 1025518380
     }
   }
 }

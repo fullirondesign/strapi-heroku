@@ -5221,7 +5221,7 @@ gatsby-source-filesystem@^2.0.8:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-source-strapi@^0.0.6:
+gatsby-source-strapi@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/gatsby-source-strapi/-/gatsby-source-strapi-0.0.6.tgz#bee0fa3d887cf9950e9c3053fb813b97deb43c76"
   integrity sha512-FnBBpdqrz2rVLk/hw+jZkZpVAwBO3vDeHaFEa3VaJGlk4e5mwWxYGHfdZ1Os5xOB6CZgR7TPQrkC2bQG0m+Rhg==

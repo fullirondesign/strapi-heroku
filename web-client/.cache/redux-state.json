@@ -266,7 +266,10 @@
           "noscript",
           "style"
         ],
-        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -313,6 +316,105 @@
         "owner": "internal-data-bridge"
       }
     },
+    "f679ecf4-6f60-5a83-994c-669c736c58cf": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-strapi",
+      "id": "f679ecf4-6f60-5a83-994c-669c736c58cf",
+      "name": "gatsby-source-strapi",
+      "version": "0.0.6",
+      "pluginOptions": {
+        "plugins": [],
+        "apiURL": "http://localhost:1337",
+        "contentTypes": [
+          "post",
+          "user"
+        ]
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-strapi",
+      "packageJson": {
+        "name": "gatsby-source-strapi",
+        "description": "Gatsby source plugin for building websites using Strapi as a data source",
+        "version": "0.0.6",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin",
+          "strapi"
+        ],
+        "author": {
+          "name": "Strapi Solutions",
+          "email": "hi@strapi.io",
+          "url": "http://strapi.io"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
+            "name": "gatsby-node-helpers",
+            "version": "^0.3.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.39"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.11"
+          },
+          {
+            "name": "pluralize",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-async-to-generator",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-plugin-transform-runtime",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "^1.6.0"
+          },
+          {
+            "name": "pre-commit",
+            "version": "^1.2.2"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.5.3"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7b0e79ae1a2f5eb4f898bbe8e1238e0e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "5cb50cb0-313d-5f0e-8aa1-c8ffb6dbd8b1": {
       "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-filesystem",
       "id": "5cb50cb0-313d-5f0e-8aa1-c8ffb6dbd8b1",
@@ -338,7 +440,10 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -459,7 +564,10 @@
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -551,7 +659,10 @@
           "image",
           "sharp"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -691,7 +802,10 @@
           "progressive-web-app",
           "pwa"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -746,7 +860,7 @@
       "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "78eb498552eba6bddf1d770b3503f83e",
+      "version": "85efacb6172638641394b637f2ce52d6",
       "pluginOptions": {
         "plugins": []
       },
@@ -801,6 +915,10 @@
             "version": "^2.0.8"
           },
           {
+            "name": "gatsby-source-strapi",
+            "version": "0.0.6"
+          },
+          {
             "name": "gatsby-transformer-sharp",
             "version": "^2.1.8"
           },
@@ -834,7 +952,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d8143ecd154cfec7f1e8aefafb89df42",
+        "contentDigest": "659b0e87c38320c57b3fb271d8fcf408",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -864,7 +982,10 @@
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -949,12 +1070,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-16T14:55:34.105Z",
+      "buildTime": "2019-01-16T19:45:52.094Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f91101430fae5c3cf8236fc7d8f5f765",
+        "contentDigest": "d8dcf378e1ad034a194c234faa3973f8",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -964,7 +1085,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5924028ef21fcfb07f02b9f4305420ae",
+        "contentDigest": "a52d3183ff1f5f84ccbe2a8383cb5822",
         "type": "Directory",
         "description": "Directory \"src\\images\"",
         "owner": "gatsby-source-filesystem"
@@ -976,7 +1097,7 @@
       "size": 0,
       "prettySize": "0 B",
       "modifiedTime": "2019-01-16T11:20:56.136Z",
-      "accessTime": "2019-01-16T14:55:40.791Z",
+      "accessTime": "2019-01-16T19:46:01.544Z",
       "changeTime": "2019-01-16T11:20:57.693Z",
       "birthTime": "2019-01-16T11:20:56.133Z",
       "root": "C:/",
@@ -992,11 +1113,11 @@
       "gid": 0,
       "rdev": 0,
       "ino": 281474977383821,
-      "atimeMs": 1547650540791.4084,
+      "atimeMs": 1547667961544.0361,
       "mtimeMs": 1547637656135.5952,
       "ctimeMs": 1547637657693.2036,
       "birthtimeMs": 1547637656132.604,
-      "atime": "2019-01-16T14:55:40.791Z",
+      "atime": "2019-01-16T19:46:01.544Z",
       "mtime": "2019-01-16T11:20:56.136Z",
       "ctime": "2019-01-16T11:20:57.693Z",
       "birthtime": "2019-01-16T11:20:56.133Z"
@@ -1021,7 +1142,7 @@
       "size": 21212,
       "prettySize": "21.2 kB",
       "modifiedTime": "2019-01-16T11:20:56.137Z",
-      "accessTime": "2019-01-16T14:33:42.306Z",
+      "accessTime": "2019-01-16T19:29:48.611Z",
       "changeTime": "2019-01-16T11:20:57.775Z",
       "birthTime": "2019-01-16T11:20:56.136Z",
       "root": "C:/",
@@ -1037,11 +1158,11 @@
       "gid": 0,
       "rdev": 0,
       "ino": 281474977383823,
-      "atimeMs": 1547649222306.174,
+      "atimeMs": 1547666988610.8088,
       "mtimeMs": 1547637656136.5923,
       "ctimeMs": 1547637657775.1763,
       "birthtimeMs": 1547637656135.5952,
-      "atime": "2019-01-16T14:33:42.306Z",
+      "atime": "2019-01-16T19:29:48.611Z",
       "mtime": "2019-01-16T11:20:56.137Z",
       "ctime": "2019-01-16T11:20:57.775Z",
       "birthtime": "2019-01-16T11:20:56.136Z"
@@ -1076,7 +1197,7 @@
       "size": 167273,
       "prettySize": "167 kB",
       "modifiedTime": "2019-01-16T11:20:56.135Z",
-      "accessTime": "2019-01-16T14:33:42.299Z",
+      "accessTime": "2019-01-16T19:33:11.534Z",
       "changeTime": "2019-01-16T11:20:57.738Z",
       "birthTime": "2019-01-16T11:20:56.135Z",
       "root": "C:/",
@@ -1092,11 +1213,11 @@
       "gid": 0,
       "rdev": 0,
       "ino": 281474977383822,
-      "atimeMs": 1547649222299.1917,
+      "atimeMs": 1547667191533.5603,
       "mtimeMs": 1547637656134.598,
       "ctimeMs": 1547637657738.083,
       "birthtimeMs": 1547637656134.598,
-      "atime": "2019-01-16T14:33:42.299Z",
+      "atime": "2019-01-16T19:33:11.534Z",
       "mtime": "2019-01-16T11:20:56.135Z",
       "ctime": "2019-01-16T11:20:57.738Z",
       "birthtime": "2019-01-16T11:20:56.135Z"
@@ -1109,6 +1230,181 @@
         "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "5c3a3d6699aa8600177e0bde": {
+      "title": "1",
+      "content": "2",
+      "createdAt": "2019-01-12T19:17:58.844Z",
+      "updatedAt": "2019-01-12T19:17:58.879Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3a3d6699aa8600177e0bde",
+      "id": "5c3a3d6699aa8600177e0bde",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "1d5f9b7c14601d31441303d5ad427bd8",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43c6839964e054c8eeb8": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:14.883Z",
+      "updatedAt": "2019-01-15T20:34:15.039Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43c6839964e054c8eeb8",
+      "id": "5c3e43c6839964e054c8eeb8",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "973875c3561a5c6ddd91efaaa0ad7664",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43cf839964e054c8eeba": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:23.081Z",
+      "updatedAt": "2019-01-15T20:34:23.235Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43cf839964e054c8eeba",
+      "id": "5c3e43cf839964e054c8eeba",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "2ed86ac88f095532d318d1d1adc0f3fd",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43d5839964e054c8eebb": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:29.835Z",
+      "updatedAt": "2019-01-15T20:34:29.991Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43d5839964e054c8eebb",
+      "id": "5c3e43d5839964e054c8eebb",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "00b6c4df4c5acfecff38c1f1fa4586ce",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43da839964e054c8eebc": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:34.339Z",
+      "updatedAt": "2019-01-15T20:34:34.498Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43da839964e054c8eebc",
+      "id": "5c3e43da839964e054c8eebc",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "d47e8c8ab64713b8654fd2467051290b",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43dd839964e054c8eebd": {
+      "title": "test2",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:34:37.863Z",
+      "updatedAt": "2019-01-15T20:34:38.024Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43dd839964e054c8eebd",
+      "id": "5c3e43dd839964e054c8eebd",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "4697756e8ef8454c5fdd4b11fbb48476",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e43ff839964e054c8eebe": {
+      "title": "test3",
+      "content": "this a pos to test connection from local client to mLab",
+      "createdAt": "2019-01-15T20:35:11.195Z",
+      "updatedAt": "2019-01-15T20:36:00.752Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e43ff839964e054c8eebe",
+      "id": "5c3e43ff839964e054c8eebe",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "8907abae468a0b54552e7028af246a76",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e448f57d6a300175b97f3": {
+      "title": "s4",
+      "content": "test s4 text",
+      "createdAt": "2019-01-15T20:37:35.097Z",
+      "updatedAt": "2019-01-15T20:37:35.115Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e448f57d6a300175b97f3",
+      "id": "5c3e448f57d6a300175b97f3",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "319b48f79c796b5ac1db3ff72d873769",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3e521ccd3da9d7e83498a6": {
+      "title": "4",
+      "content": "4",
+      "createdAt": "2019-01-15T21:35:24.731Z",
+      "updatedAt": "2019-01-15T21:35:24.892Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3e521ccd3da9d7e83498a6",
+      "id": "5c3e521ccd3da9d7e83498a6",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "b8429e7cd14c245902d39e05cbdd8fea",
+        "owner": "gatsby-source-strapi"
+      }
+    },
+    "5c3a3d4699aa8600177e0bdd": {
+      "confirmed": true,
+      "blocked": false,
+      "username": "root",
+      "email": "ilyafefelov@gmail.com",
+      "provider": "local",
+      "role": {
+        "name": "Administrator",
+        "description": "These users have all access in the project.",
+        "type": "root",
+        "id": "5c3a25f107e6b70017cb20db"
+      },
+      "strapiId": "5c3a3d4699aa8600177e0bdd",
+      "id": "5c3a3d4699aa8600177e0bdd",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiUser",
+        "contentDigest": "89722e78a547406e42bb95afd1705e36",
+        "owner": "gatsby-source-strapi"
       }
     },
     "SitePage /404/": {
@@ -1171,6 +1467,26 @@
         "owner": "internal-data-bridge"
       }
     },
+    "SitePage /page-3/": {
+      "jsonName": "page-3-74c",
+      "internalComponentName": "ComponentPage3",
+      "path": "/page-3/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js",
+      "componentChunkName": "component---src-pages-page-3-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js",
+      "id": "SitePage /page-3/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "256b8edc7a4defaee1d85ae703775eb8",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
     "SitePage /404.html": {
       "jsonName": "404-html-516",
       "internalComponentName": "Component404Html",
@@ -1194,7 +1510,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "dd7fbfed0b28acda3079e7f4fd8f2186"
+    "PLUGINS_HASH": "57bd6ecbcc3403fac923cdd9baf1bcff"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1203,23 +1519,39 @@
         "sq--src-components-seo-js"
       ],
       "ace22f35-1f42-521a-a856-0a71b2622d45": [
+        "/page-2/",
+        "/",
         "sq--src-components-image-js"
+      ],
+      "77eb67a8-a7df-5636-9a76-e063076dabe1": [
+        "/page-2/",
+        "/"
       ],
       "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": [
         "sq--src-components-image-js"
       ]
     },
-    "connections": {}
+    "connections": {
+      "File": [
+        "/page-2/",
+        null
+      ],
+      "StrapiPost": [
+        null,
+        "/page-3/"
+      ]
+    }
   },
   "jsonDataPaths": {
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-layout-js": 755544856,
-    "sq--src-components-seo-js": 1025518380,
-    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "page-2-fbc": "887/path---page-2-fbc-5a8-6C1YnbNzhnh2UKMc0WCh0qcMDw",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-image-js": 2011440971
+    "sq--src-components-seo-js": 1025518380,
+    "sq--src-components-layout-js": 755544856,
+    "sq--src-components-image-js": 2011440971,
+    "page-3-74c": "127/path---page-3-74-c-e74-9xtzr8Zr80n2M6vkoynh9cJykU"
   },
   "components": {
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js": {
@@ -1235,19 +1567,15 @@
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js"
     },
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js": {
-      "query": "",
+      "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPage2Js102664242 {\n  allFile {\n    edges {\n      node {\n        publicURL\n        prettySize\n        extension\n        birthTime(fromNow: true)\n      }\n    }\n  }\n}\n",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-2.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js": {
+      "query": "query IndexQuery {\n  allStrapiPost {\n    edges {\n      node {\n        id\n        title\n        content\n      }\n    }\n  }\n}\n",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js"
     }
   },
   "staticQueryComponents": {
-    "sq--src-components-layout-js": {
-      "name": "SiteTitleQuery",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/layout.js",
-      "id": "sq--src-components-layout-js",
-      "jsonName": "sq--src-components-layout-js",
-      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
-      "hash": 755544856
-    },
     "sq--src-components-image-js": {
       "name": "cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcComponentsImageJs2011440971",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/image.js",
@@ -1263,6 +1591,14 @@
       "jsonName": "sq--src-components-seo-js",
       "query": "query DefaultSEOQuery {\n  site {\n    siteMetadata {\n      title\n      description\n      author\n    }\n  }\n}\n",
       "hash": 1025518380
+    },
+    "sq--src-components-layout-js": {
+      "name": "SiteTitleQuery",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/components/layout.js",
+      "id": "sq--src-components-layout-js",
+      "jsonName": "sq--src-components-layout-js",
+      "query": "query SiteTitleQuery {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
+      "hash": 755544856
     }
   }
 }

@@ -7,6 +7,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: 'http://localhost:1337',
+        contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
+          'post',
+          'user'
+        ]
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -30,5 +40,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
+   
+      // options: {
+      //   apiURL: `http://localhost:1337`,
+      //   contentTypes: [`article`, `user`],
+      //   // Possibility to login with a strapi user, when content types are not publically available (optional).
+      //   loginData: {
+      //     identifier: "",
+      //     password: "",
+      //   },
+      // },
+    
+  ]
 }

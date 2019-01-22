@@ -2,6 +2,7 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
+  "component---cache-dev-404-page-js": () => import("C:\\Users\\ilyafefelov\\Dropbox\\Code\\strapi-heroku\\good-ua\\web-client\\.cache\\dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("C:\\Users\\ilyafefelov\\Dropbox\\Code\\strapi-heroku\\good-ua\\web-client\\src\\pages\\404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-app-js": () => import("C:\\Users\\ilyafefelov\\Dropbox\\Code\\strapi-heroku\\good-ua\\web-client\\src\\pages\\app.js" /* webpackChunkName: "component---src-pages-app-js" */),
   "component---src-pages-index-js": () => import("C:\\Users\\ilyafefelov\\Dropbox\\Code\\strapi-heroku\\good-ua\\web-client\\src\\pages\\index.js" /* webpackChunkName: "component---src-pages-index-js" */),

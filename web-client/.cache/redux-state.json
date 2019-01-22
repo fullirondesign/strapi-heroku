@@ -304,6 +304,75 @@
         "owner": "internal-data-bridge"
       }
     },
+    "12281a3c-d876-5b00-ba93-a9d3d8ce94d0": {
+      "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-create-client-paths",
+      "id": "12281a3c-d876-5b00-ba93-a9d3d8ce94d0",
+      "name": "gatsby-plugin-create-client-paths",
+      "version": "2.0.3",
+      "pluginOptions": {
+        "plugins": [],
+        "prefixes": [
+          "/app/*"
+        ]
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-plugin-create-client-paths",
+      "packageJson": {
+        "name": "gatsby-plugin-create-client-paths",
+        "description": "Gatsby-plugin for creating paths that exist only on the client",
+        "version": "2.0.3",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "scott.eckenthal@gmail.com",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f9ff65b825b536e6ce6fc12f088f87a5",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "f679ecf4-6f60-5a83-994c-669c736c58cf": {
       "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/node_modules/gatsby-source-strapi",
       "id": "f679ecf4-6f60-5a83-994c-669c736c58cf",
@@ -836,7 +905,7 @@
       "resolve": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "9e744c23aaa927cba6d766e23ea87f54",
+      "version": "ecbe50de6399f2864b139c8e0082a3f5",
       "pluginOptions": {
         "plugins": []
       },
@@ -913,6 +982,10 @@
           {
             "name": "react-helmet",
             "version": "^5.2.0"
+          },
+          {
+            "name": "gatsby-plugin-create-client-paths",
+            "version": "^2.0.3"
           }
         ],
         "devDependencies": [
@@ -928,7 +1001,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3ac4470b77fd0504fba519d5e6988f49",
+        "contentDigest": "788c176418c15dacfaf0ea0b3eb27f6a",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1041,12 +1114,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-16T21:42:19.191Z",
+      "buildTime": "2019-01-22T13:08:17.393Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ba3689551e43e21afec0bcf5e93cd857",
+        "contentDigest": "c3e027d963e42d154bd3f7be3afb85be",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1082,91 +1155,6 @@
       "internal": {
         "type": "StrapiPost",
         "contentDigest": "973875c3561a5c6ddd91efaaa0ad7664",
-        "owner": "gatsby-source-strapi"
-      }
-    },
-    "5c3e43cf839964e054c8eeba": {
-      "title": "test2",
-      "content": "this a pos to test connection from local client to mLab",
-      "createdAt": "2019-01-15T20:34:23.081Z",
-      "updatedAt": "2019-01-15T20:34:23.235Z",
-      "cover": null,
-      "tags": [],
-      "strapiId": "5c3e43cf839964e054c8eeba",
-      "id": "5c3e43cf839964e054c8eeba",
-      "parent": "__SOURCE__",
-      "children": [],
-      "internal": {
-        "type": "StrapiPost",
-        "contentDigest": "2ed86ac88f095532d318d1d1adc0f3fd",
-        "owner": "gatsby-source-strapi"
-      }
-    },
-    "5c3e43d5839964e054c8eebb": {
-      "title": "test2",
-      "content": "this a pos to test connection from local client to mLab",
-      "createdAt": "2019-01-15T20:34:29.835Z",
-      "updatedAt": "2019-01-15T20:34:29.991Z",
-      "cover": null,
-      "tags": [],
-      "strapiId": "5c3e43d5839964e054c8eebb",
-      "id": "5c3e43d5839964e054c8eebb",
-      "parent": "__SOURCE__",
-      "children": [],
-      "internal": {
-        "type": "StrapiPost",
-        "contentDigest": "00b6c4df4c5acfecff38c1f1fa4586ce",
-        "owner": "gatsby-source-strapi"
-      }
-    },
-    "5c3e43da839964e054c8eebc": {
-      "title": "test2",
-      "content": "this a pos to test connection from local client to mLab",
-      "createdAt": "2019-01-15T20:34:34.339Z",
-      "updatedAt": "2019-01-15T20:34:34.498Z",
-      "cover": null,
-      "tags": [],
-      "strapiId": "5c3e43da839964e054c8eebc",
-      "id": "5c3e43da839964e054c8eebc",
-      "parent": "__SOURCE__",
-      "children": [],
-      "internal": {
-        "type": "StrapiPost",
-        "contentDigest": "d47e8c8ab64713b8654fd2467051290b",
-        "owner": "gatsby-source-strapi"
-      }
-    },
-    "5c3e43dd839964e054c8eebd": {
-      "title": "test2",
-      "content": "this a pos to test connection from local client to mLab",
-      "createdAt": "2019-01-15T20:34:37.863Z",
-      "updatedAt": "2019-01-15T20:34:38.024Z",
-      "cover": null,
-      "tags": [],
-      "strapiId": "5c3e43dd839964e054c8eebd",
-      "id": "5c3e43dd839964e054c8eebd",
-      "parent": "__SOURCE__",
-      "children": [],
-      "internal": {
-        "type": "StrapiPost",
-        "contentDigest": "4697756e8ef8454c5fdd4b11fbb48476",
-        "owner": "gatsby-source-strapi"
-      }
-    },
-    "5c3e43ff839964e054c8eebe": {
-      "title": "test3",
-      "content": "this a pos to test connection from local client to mLab",
-      "createdAt": "2019-01-15T20:35:11.195Z",
-      "updatedAt": "2019-01-15T20:36:00.752Z",
-      "cover": null,
-      "tags": [],
-      "strapiId": "5c3e43ff839964e054c8eebe",
-      "id": "5c3e43ff839964e054c8eebe",
-      "parent": "__SOURCE__",
-      "children": [],
-      "internal": {
-        "type": "StrapiPost",
-        "contentDigest": "8907abae468a0b54552e7028af246a76",
         "owner": "gatsby-source-strapi"
       }
     },
@@ -1236,6 +1224,23 @@
         "owner": "gatsby-source-strapi"
       }
     },
+    "5c3fac59ce56a900176995ef": {
+      "title": "6",
+      "content": "6666",
+      "createdAt": "2019-01-16T22:12:41.652Z",
+      "updatedAt": "2019-01-16T22:12:41.666Z",
+      "cover": null,
+      "tags": [],
+      "strapiId": "5c3fac59ce56a900176995ef",
+      "id": "5c3fac59ce56a900176995ef",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "StrapiPost",
+        "contentDigest": "c68b6ef1762297a8c2c83b0c9932faca",
+        "owner": "gatsby-source-strapi"
+      }
+    },
     "5c3a3d4699aa8600177e0bdd": {
       "confirmed": true,
       "blocked": false,
@@ -1263,7 +1268,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b886f610bd26ba8acb5c67c4602a6292",
+        "contentDigest": "863dbaf355f05dbb7615fa6d1d1e310c",
         "type": "Directory",
         "description": "Directory \"src\\images\"",
         "owner": "gatsby-source-filesystem"
@@ -1274,10 +1279,10 @@
       "extension": "",
       "size": 0,
       "prettySize": "0 B",
-      "modifiedTime": "2019-01-16T20:10:50.415Z",
-      "accessTime": "2019-01-16T21:42:57.634Z",
-      "changeTime": "2019-01-16T20:15:26.031Z",
-      "birthTime": "2019-01-16T20:10:50.401Z",
+      "modifiedTime": "2019-01-16T22:08:11.021Z",
+      "accessTime": "2019-01-18T16:58:38.354Z",
+      "changeTime": "2019-01-16T22:10:57.784Z",
+      "birthTime": "2019-01-16T22:08:11.009Z",
       "root": "C:/",
       "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src",
       "base": "images",
@@ -1290,15 +1295,15 @@
       "uid": 0,
       "gid": 0,
       "rdev": 0,
-      "ino": 562949954102534,
-      "atimeMs": 1547674977633.5032,
-      "mtimeMs": 1547669450414.5479,
-      "ctimeMs": 1547669726031.1084,
-      "birthtimeMs": 1547669450400.5835,
-      "atime": "2019-01-16T21:42:57.634Z",
-      "mtime": "2019-01-16T20:10:50.415Z",
-      "ctime": "2019-01-16T20:15:26.031Z",
-      "birthtime": "2019-01-16T20:10:50.401Z"
+      "ino": 562949954184485,
+      "atimeMs": 1547830718354.3208,
+      "mtimeMs": 1547676491020.6826,
+      "ctimeMs": 1547676657784.0898,
+      "birthtimeMs": 1547676491008.712,
+      "atime": "2019-01-18T16:58:38.354Z",
+      "mtime": "2019-01-16T22:08:11.021Z",
+      "ctime": "2019-01-16T22:10:57.784Z",
+      "birthtime": "2019-01-16T22:08:11.009Z"
     },
     "77eb67a8-a7df-5636-9a76-e063076dabe1": {
       "id": "77eb67a8-a7df-5636-9a76-e063076dabe1",
@@ -1319,10 +1324,10 @@
       "extension": "png",
       "size": 21212,
       "prettySize": "21.2 kB",
-      "modifiedTime": "2019-01-16T20:10:50.419Z",
-      "accessTime": "2019-01-16T21:40:15.291Z",
-      "changeTime": "2019-01-16T20:15:26.204Z",
-      "birthTime": "2019-01-16T20:10:50.415Z",
+      "modifiedTime": "2019-01-16T22:08:11.025Z",
+      "accessTime": "2019-01-16T22:46:27.375Z",
+      "changeTime": "2019-01-16T22:10:57.862Z",
+      "birthTime": "2019-01-16T22:08:11.021Z",
       "root": "C:/",
       "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
       "base": "gatsby-icon.png",
@@ -1335,15 +1340,15 @@
       "uid": 0,
       "gid": 0,
       "rdev": 0,
-      "ino": 562949954102536,
-      "atimeMs": 1547674815290.933,
-      "mtimeMs": 1547669450418.5356,
-      "ctimeMs": 1547669726203.648,
-      "birthtimeMs": 1547669450414.5479,
-      "atime": "2019-01-16T21:40:15.291Z",
-      "mtime": "2019-01-16T20:10:50.419Z",
-      "ctime": "2019-01-16T20:15:26.204Z",
-      "birthtime": "2019-01-16T20:10:50.415Z"
+      "ino": 562949954184487,
+      "atimeMs": 1547678787374.882,
+      "mtimeMs": 1547676491024.6707,
+      "ctimeMs": 1547676657861.8813,
+      "birthtimeMs": 1547676491020.6826,
+      "atime": "2019-01-16T22:46:27.375Z",
+      "mtime": "2019-01-16T22:08:11.025Z",
+      "ctime": "2019-01-16T22:10:57.862Z",
+      "birthtime": "2019-01-16T22:08:11.021Z"
     },
     "66e2758a-8a25-5391-b1f4-1a45bfa5af03": {
       "id": "66e2758a-8a25-5391-b1f4-1a45bfa5af03",
@@ -1374,10 +1379,10 @@
       "extension": "png",
       "size": 167273,
       "prettySize": "167 kB",
-      "modifiedTime": "2019-01-16T20:10:50.411Z",
-      "accessTime": "2019-01-16T21:40:15.060Z",
-      "changeTime": "2019-01-16T20:15:26.117Z",
-      "birthTime": "2019-01-16T20:10:50.406Z",
+      "modifiedTime": "2019-01-16T22:08:11.017Z",
+      "accessTime": "2019-01-16T22:46:31.505Z",
+      "changeTime": "2019-01-16T22:10:57.822Z",
+      "birthTime": "2019-01-16T22:08:11.014Z",
       "root": "C:/",
       "dir": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/images",
       "base": "gatsby-astronaut.png",
@@ -1390,15 +1395,15 @@
       "uid": 0,
       "gid": 0,
       "rdev": 0,
-      "ino": 562949954102535,
-      "atimeMs": 1547674815059.5508,
-      "mtimeMs": 1547669450410.5583,
-      "ctimeMs": 1547669726116.8792,
-      "birthtimeMs": 1547669450405.572,
-      "atime": "2019-01-16T21:40:15.060Z",
-      "mtime": "2019-01-16T20:10:50.411Z",
-      "ctime": "2019-01-16T20:15:26.117Z",
-      "birthtime": "2019-01-16T20:10:50.406Z"
+      "ino": 562949954184486,
+      "atimeMs": 1547678791505.0542,
+      "mtimeMs": 1547676491016.6938,
+      "ctimeMs": 1547676657822.007,
+      "birthtimeMs": 1547676491013.697,
+      "atime": "2019-01-16T22:46:31.505Z",
+      "mtime": "2019-01-16T22:08:11.017Z",
+      "ctime": "2019-01-16T22:10:57.822Z",
+      "birthtime": "2019-01-16T22:08:11.014Z"
     },
     "7f37dcfa-49a3-54a7-beb0-1c7920813cd9": {
       "id": "7f37dcfa-49a3-54a7-beb0-1c7920813cd9",
@@ -1427,6 +1432,27 @@
         "type": "SitePage",
         "contentDigest": "4f19e682b12c4cb920a6356cd0489685",
         "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /app/": {
+      "jsonName": "app-f4d",
+      "internalComponentName": "ComponentApp",
+      "path": "/app/",
+      "matchPath": "/app/*",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/app.js",
+      "componentChunkName": "component---src-pages-app-js",
+      "context": {},
+      "pluginCreator___NODE": "12281a3c-d876-5b00-ba93-a9d3d8ce94d0",
+      "pluginCreatorId": "12281a3c-d876-5b00-ba93-a9d3d8ce94d0",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/app.js",
+      "id": "SitePage /app/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f00c2696242f5a3321ab202cd4b836d0",
+        "description": "12281a3c-d876-5b00-ba93-a9d3d8ce94d0",
         "owner": "internal-data-bridge"
       }
     },
@@ -1513,7 +1539,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "1bcbab48439e87782c59445798ecf30b"
+    "PLUGINS_HASH": "e6584fb56dfc1081ad784a70e1ae0624"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1522,8 +1548,8 @@
         "sq--src-components-seo-js"
       ],
       "ace22f35-1f42-521a-a856-0a71b2622d45": [
-        "sq--src-components-image-js",
-        "/page-2/"
+        "/page-2/",
+        "sq--src-components-image-js"
       ],
       "77eb67a8-a7df-5636-9a76-e063076dabe1": [
         "/page-2/"
@@ -1542,14 +1568,15 @@
     }
   },
   "jsonDataPaths": {
-    "sq--src-components-seo-js": 1025518380,
     "sq--src-components-layout-js": 755544856,
-    "page-2-fbc": "838/path---page-2-fbc-5a8-KxTfjkeP7w1IrW0k6CYbOxZyo",
-    "page-3-74c": "451/path---page-3-74-c-e74-jwuzVux8eT0SfFbEEDgntTt9U",
+    "page-2-fbc": "494/path---page-2-fbc-5a8-zUZ38fDtp3xlzrEhTtR9n7viqU",
+    "sq--src-components-seo-js": 1025518380,
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "page-3-74c": "752/path---page-3-74-c-e74-GHMJ9mv0EejMt9q6V6umbHlI324",
     "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "sq--src-components-image-js": 2011440971
+    "sq--src-components-image-js": 2011440971,
+    "app-f4d": "692/path---app-f-4-d-201-7sTbSTl87iqB6HZaNdppH1kmSA"
   },
   "components": {
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/404.js": {
@@ -1567,6 +1594,10 @@
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js": {
       "query": "query IndexQuery {\n  allStrapiPost {\n    edges {\n      node {\n        id\n        title\n        content\n      }\n    }\n  }\n}\n",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/page-3.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/app.js": {
+      "query": "",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/app.js"
     }
   },
   "staticQueryComponents": {

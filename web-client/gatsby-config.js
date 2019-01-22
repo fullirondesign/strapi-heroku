@@ -11,6 +11,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: 'http://localhost:1337',

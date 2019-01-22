@@ -23,5 +23,11 @@
         "componentChunkName": "component---src-pages-page-3-js",
         "jsonName": "page-3-74c",
         "path": "/page-3/"
+    },
+    {
+        "componentChunkName": "component---src-pages-app-js",
+        "jsonName": "app-f4d",
+        "path": "/app/",
+        "matchPath": "/app/*"
     }
 ]

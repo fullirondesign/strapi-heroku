@@ -9,7 +9,7 @@ const SecondPage = ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Page 3" />
       <h1>Here are some Posts</h1>
       <p>Welcome to good-ua selection</p>
       

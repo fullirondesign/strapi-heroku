@@ -464,12 +464,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-27T15:30:09.266Z",
+      "buildTime": "2019-01-27T15:50:43.296Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "eb30ba778004fc83b9333488ec0a515d",
+        "contentDigest": "126bf864a78ff318f334c552365df649",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -482,7 +482,7 @@
       "children": [],
       "internal": {
         "type": "GraphQLSource",
-        "contentDigest": "29d3b78e8cbda89d569430585ab40118",
+        "contentDigest": "21a7b7cb05b4ce018c929ef357473c25",
         "ignoreType": true,
         "owner": "gatsby-source-graphql"
       }

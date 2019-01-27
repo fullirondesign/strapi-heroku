@@ -464,12 +464,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-27T13:10:05.331Z",
+      "buildTime": "2019-01-27T15:30:09.266Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9d7f2332019f00cc827f130c44750e6a",
+        "contentDigest": "eb30ba778004fc83b9333488ec0a515d",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -482,7 +482,7 @@
       "children": [],
       "internal": {
         "type": "GraphQLSource",
-        "contentDigest": "b6357af93419386bc08101035ccf3570",
+        "contentDigest": "29d3b78e8cbda89d569430585ab40118",
         "ignoreType": true,
         "owner": "gatsby-source-graphql"
       }
@@ -577,17 +577,17 @@
       "b70d8c13-94e2-5d69-8f4b-42209d97b53a": [
         "/posts.1/",
         "/",
-        "/test/",
-        "/posts/"
+        "/posts/",
+        "/test/"
       ]
     },
     "connections": {}
   },
   "jsonDataPaths": {
-    "index": "967/path---index-6a9-fx5yWPaqzNarvnJjYBByYwYu4",
+    "test-384": "978/path---test-384-878-fx5yWPaqzNarvnJjYBByYwYu4",
     "posts-0d3": "257/path---posts-0-d-3-d29-fx5yWPaqzNarvnJjYBByYwYu4",
-    "posts-1-a0f": "706/path---posts-1-a-0-f-31c-fx5yWPaqzNarvnJjYBByYwYu4",
-    "test-384": "978/path---test-384-878-fx5yWPaqzNarvnJjYBByYwYu4"
+    "index": "967/path---index-6a9-fx5yWPaqzNarvnJjYBByYwYu4",
+    "posts-1-a0f": "706/path---posts-1-a-0-f-31c-fx5yWPaqzNarvnJjYBByYwYu4"
   },
   "components": {
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js": {

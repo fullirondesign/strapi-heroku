@@ -3,11 +3,13 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
-exports.default = exports.publicLoader = exports.setApiRunnerForLoader = exports.postInitialRenderWork = void 0;
+exports.default = exports.publicLoader = exports.setApiRunnerForLoader = void 0;
 
 var _findPage = _interopRequireDefault(require("./find-page"));
 
 var _emitter = _interopRequireDefault(require("./emitter"));
+
+var _stripPrefix = _interopRequireDefault(require("./strip-prefix"));
 
 var _prefetch = _interopRequireDefault(require("./prefetch"));
 
@@ -22,9 +24,9 @@ let jsonDataPaths = {};
 let fetchHistory = [];
 let fetchingPageResourceMapPromise = null;
 let fetchedPageResourceMap = false;
-let hasPageResourceMap = false;
 let apiRunner;
 const failedPaths = {};
+const failedResources = {};
 const MAX_HISTORY = 5;
 const jsonPromiseStore = {};
 
@@ -50,15 +52,6 @@ const fetchPageResourceMap = () => {
         window.___dataPaths = dataPaths;
         queue.addPagesArray(pages);
         queue.addDataPaths(dataPaths);
-        hasPageResourceMap = true;
-        resolve(fetchedPageResourceMap = true);
-      }).catch(e => {
-        console.warn(`Failed to fetch pages manifest. Gatsby will reload on next navigation.`); // failed to grab pages metadata
-        // for now let's just resolve this - on navigation this will cause missing resources
-        // and will trigger page reload and then it will retry
-        // this can happen with service worker updates when webpack manifest points to old
-        // chunk that no longer exists on server
-
         resolve(fetchedPageResourceMap = true);
       });
     });
@@ -93,7 +86,6 @@ const fetchResource = resourceName => {
               if (req.status === 200) {
                 resolve(JSON.parse(req.responseText));
               } else {
-                delete jsonPromiseStore[resourceName];
                 reject();
               }
             }
@@ -119,6 +111,11 @@ const fetchResource = resourceName => {
         resource: resourceName,
         succeeded: !failed
       });
+
+      if (!failedResources[resourceName]) {
+        failedResources[resourceName] = failed;
+      }
+
       fetchHistory = fetchHistory.slice(-MAX_HISTORY);
       resolve(component);
     });
@@ -127,10 +124,10 @@ const fetchResource = resourceName => {
 
 const prefetchResource = resourceName => {
   if (resourceName.slice(0, 12) === `component---`) {
-    return Promise.all(createComponentUrls(resourceName).map(url => (0, _prefetch.default)(url)));
+    createComponentUrls(resourceName).forEach(url => (0, _prefetch.default)(url));
   } else {
     const url = createJsonURL(jsonDataPaths[resourceName]);
-    return (0, _prefetch.default)(url);
+    (0, _prefetch.default)(url);
   }
 };
 
@@ -161,7 +158,7 @@ const handleResourceLoadError = (path, message) => {
 const onPrefetchPathname = pathname => {
   if (!prefetchTriggered[pathname]) {
     apiRunner(`onPrefetchPathname`, {
-      pathname
+      pathname: pathname
     });
     prefetchTriggered[pathname] = true;
   }
@@ -170,13 +167,11 @@ const onPrefetchPathname = pathname => {
 const onPostPrefetchPathname = pathname => {
   if (!prefetchCompleted[pathname]) {
     apiRunner(`onPostPrefetchPathname`, {
-      pathname
+      pathname: pathname
     });
     prefetchCompleted[pathname] = true;
   }
-};
-
-const shouldFallbackTo404Resources = path => (hasPageResourceMap || inInitialRender) && path !== `/404.html`; // Note we're not actively using the path data atm. There
+}; // Note we're not actively using the path data atm. There
 // could be future optimizations however around trying to ensure
 // we load all resources for likely-to-be-visited paths.
 // let pathArray = []
@@ -204,23 +199,14 @@ const queue = {
   // Hovering on a link is a very strong indication the user is going to
   // click on it soon so let's start prefetching resources for this
   // pathname.
-  hovering: path => {
+  hovering: rawPath => {
+    const path = (0, _stripPrefix.default)(rawPath, __PATH_PREFIX__);
     queue.getResourcesForPathname(path);
   },
-  enqueue: path => {
-    if (!apiRunner) console.error(`Run setApiRunnerForLoader() before enqueing paths`); // Skip prefetching if we know user is on slow or constrained connection
-
-    if (`connection` in navigator) {
-      if ((navigator.connection.effectiveType || ``).includes(`2g`)) {
-        return false;
-      }
-
-      if (navigator.connection.saveData) {
-        return false;
-      }
-    } // Tell plugins with custom prefetching logic that they should start
+  enqueue: rawPath => {
+    const path = (0, _stripPrefix.default)(rawPath, __PATH_PREFIX__);
+    if (!apiRunner) console.error(`Run setApiRunnerForLoader() before enqueing paths`); // Tell plugins with custom prefetching logic that they should start
     // prefetching this path.
-
 
     onPrefetchPathname(path); // If a plugin has disabled core prefetching, stop now.
 
@@ -235,7 +221,7 @@ const queue = {
     if (process.env.NODE_ENV === `production` && !page && !fetchedPageResourceMap) {
       // If page wasn't found check and we didn't fetch resources map for
       // all pages, wait for fetch to complete and try find page again
-      return fetchPageResourceMap().then(() => queue.enqueue(path));
+      return fetchPageResourceMap().then(() => queue.enqueue(rawPath));
     }
 
     if (!page) {
@@ -248,12 +234,12 @@ const queue = {
 
 
     if (process.env.NODE_ENV === `production`) {
-      Promise.all([prefetchResource(page.jsonName), prefetchResource(page.componentChunkName)]).then(() => {
-        // Tell plugins the path has been successfully prefetched
-        onPostPrefetchPathname(path);
-      });
-    }
+      prefetchResource(page.jsonName);
+      prefetchResource(page.componentChunkName);
+    } // Tell plugins the path has been successfully prefetched
 
+
+    onPostPrefetchPathname(path);
     return true;
   },
   getPage: pathname => findPage(pathname),
@@ -271,7 +257,7 @@ const queue = {
 
     if (page) {
       return pathScriptsCache[page.path];
-    } else if (shouldFallbackTo404Resources(path)) {
+    } else if (path !== `/404.html`) {
       return queue.getResourcesForPathnameSync(`/404.html`);
     } else {
       return null;
@@ -281,7 +267,9 @@ const queue = {
   // if necessary and then the code/data bundles. Used for prefetching
   // and getting resources for page changes.
   getResourcesForPathname: path => new Promise((resolve, reject) => {
-    // Production code path
+    const doingInitialRender = inInitialRender;
+    inInitialRender = false; // Production code path
+
     if (failedPaths[path]) {
       handleResourceLoadError(path, `Previously detected load failure for "${path}"`);
       reject();
@@ -299,9 +287,9 @@ const queue = {
     }
 
     if (!page) {
-      if (shouldFallbackTo404Resources(path)) {
-        console.log(`A page wasn't found for "${path}"`); // Preload the custom 404 page
+      console.log(`A page wasn't found for "${path}"`); // Preload the custom 404 page
 
+      if (path !== `/404.html`) {
         resolve(queue.getResourcesForPathname(`/404.html`));
         return;
       }
@@ -342,10 +330,8 @@ const queue = {
         _emitter.default.emit(`onPostLoadPageResources`, {
           page,
           pageResources
-        }); // Tell plugins the path has been successfully prefetched
+        });
 
-
-        onPostPrefetchPathname(path);
         resolve(pageResources);
       });
     } else {
@@ -367,26 +353,20 @@ const queue = {
         _emitter.default.emit(`onPostLoadPageResources`, {
           page,
           pageResources
-        }); // Tell plugins the path has been successfully prefetched
+        });
 
-
-        onPostPrefetchPathname(path);
+        if (doingInitialRender) {
+          // We got all resources needed for first mount,
+          // we can fetch resoures for all pages.
+          fetchPageResourceMap();
+        }
       });
-    }
+    } // Tell plugins the path has been successfully prefetched
+
+
+    onPostPrefetchPathname(path);
   })
 };
-
-const postInitialRenderWork = () => {
-  inInitialRender = false;
-
-  if (process.env.NODE_ENV === `production`) {
-    // We got all resources needed for first mount,
-    // we can fetch resoures for all pages.
-    fetchPageResourceMap();
-  }
-};
-
-exports.postInitialRenderWork = postInitialRenderWork;
 
 const setApiRunnerForLoader = runner => {
   apiRunner = runner;

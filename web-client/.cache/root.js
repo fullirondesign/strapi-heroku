@@ -1,7 +1,6 @@
 import React, { createElement } from "react"
 import { Router } from "@reach/router"
 import { ScrollContext } from "gatsby-react-router-scroll"
-
 import {
   shouldUpdateScroll,
   init as navigationInit,
@@ -14,21 +13,34 @@ import loader from "./loader"
 import JSONStore from "./json-store"
 import EnsureResources from "./ensure-resources"
 
-import { reportError, clearError } from "./error-overlay-handler"
+import * as ErrorOverlay from "react-error-overlay"
+
+// Report runtime errors
+ErrorOverlay.startReportingRuntimeErrors({
+  onError: () => {},
+  filename: `/commons.js`,
+})
+ErrorOverlay.setEditorHandler(errorLocation =>
+  window.fetch(
+    `/__open-stack-frame-in-editor?fileName=` +
+      window.encodeURIComponent(errorLocation.fileName) +
+      `&lineNumber=` +
+      window.encodeURIComponent(errorLocation.lineNumber || 1)
+  )
+)
 
 if (window.__webpack_hot_middleware_reporter__ !== undefined) {
-  const overlayErrorID = `webpack`
   // Report build errors
   window.__webpack_hot_middleware_reporter__.useCustomOverlay({
     showProblems(type, obj) {
       if (type !== `errors`) {
-        clearError(overlayErrorID)
+        ErrorOverlay.dismissBuildError()
         return
       }
-      reportError(overlayErrorID, obj[0])
+      ErrorOverlay.reportBuildError(obj[0])
     },
     clear() {
-      clearError(overlayErrorID)
+      ErrorOverlay.dismissBuildError()
     },
   })
 }
@@ -64,27 +76,27 @@ class RouteHandler extends React.Component {
       )
     } else {
       const dev404Page = pages.find(p => /^\/dev-404-page\/?$/.test(p.path))
-      const Dev404Page = syncRequires.components[dev404Page.componentChunkName]
-
-      if (!loader.getPage(`/404.html`)) {
-        return <Dev404Page pages={pages} {...this.props} />
-      }
+      const custom404 = locationAndPageResources =>
+        loader.getPage(`/404.html`) ? (
+          <JSONStore
+            pages={pages}
+            {...this.props}
+            {...locationAndPageResources}
+          />
+        ) : null
 
       return (
         <EnsureResources location={location}>
-          {locationAndPageResources => (
-            <Dev404Page
-              pages={pages}
-              custom404={
-                <JSONStore
-                  pages={pages}
-                  {...this.props}
-                  {...locationAndPageResources}
-                />
+          {locationAndPageResources =>
+            createElement(
+              syncRequires.components[dev404Page.componentChunkName],
+              {
+                pages,
+                custom404: custom404(locationAndPageResources),
+                ...this.props,
               }
-              {...this.props}
-            />
-          )}
+            )
+          }
         </EnsureResources>
       )
     }

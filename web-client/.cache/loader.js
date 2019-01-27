@@ -1,5 +1,6 @@
 import pageFinderFactory from "./find-page"
 import emitter from "./emitter"
+import stripPrefix from "./strip-prefix"
 import prefetchHelper from "./prefetch"
 
 const preferDefault = m => (m && m.default) || m
@@ -13,9 +14,9 @@ let jsonDataPaths = {}
 let fetchHistory = []
 let fetchingPageResourceMapPromise = null
 let fetchedPageResourceMap = false
-let hasPageResourceMap = false
 let apiRunner
 const failedPaths = {}
+const failedResources = {}
 const MAX_HISTORY = 5
 
 const jsonPromiseStore = {}
@@ -31,29 +32,15 @@ if (process.env.NODE_ENV !== `production`) {
 const fetchPageResourceMap = () => {
   if (!fetchingPageResourceMapPromise) {
     fetchingPageResourceMapPromise = new Promise(resolve => {
-      asyncRequires
-        .data()
-        .then(({ pages, dataPaths }) => {
-          // TODO — expose proper way to access this data from plugins.
-          // Need to come up with an API for plugins to access
-          // site info.
-          window.___dataPaths = dataPaths
-          queue.addPagesArray(pages)
-          queue.addDataPaths(dataPaths)
-          hasPageResourceMap = true
-          resolve((fetchedPageResourceMap = true))
-        })
-        .catch(e => {
-          console.warn(
-            `Failed to fetch pages manifest. Gatsby will reload on next navigation.`
-          )
-          // failed to grab pages metadata
-          // for now let's just resolve this - on navigation this will cause missing resources
-          // and will trigger page reload and then it will retry
-          // this can happen with service worker updates when webpack manifest points to old
-          // chunk that no longer exists on server
-          resolve((fetchedPageResourceMap = true))
-        })
+      asyncRequires.data().then(({ pages, dataPaths }) => {
+        // TODO — expose proper way to access this data from plugins.
+        // Need to come up with an API for plugins to access
+        // site info.
+        window.___dataPaths = dataPaths
+        queue.addPagesArray(pages)
+        queue.addDataPaths(dataPaths)
+        resolve((fetchedPageResourceMap = true))
+      })
     })
   }
   return fetchingPageResourceMapPromise
@@ -85,7 +72,6 @@ const fetchResource = resourceName => {
               if (req.status === 200) {
                 resolve(JSON.parse(req.responseText))
               } else {
-                delete jsonPromiseStore[resourceName]
                 reject()
               }
             }
@@ -113,6 +99,10 @@ const fetchResource = resourceName => {
           succeeded: !failed,
         })
 
+        if (!failedResources[resourceName]) {
+          failedResources[resourceName] = failed
+        }
+
         fetchHistory = fetchHistory.slice(-MAX_HISTORY)
 
         resolve(component)
@@ -122,12 +112,10 @@ const fetchResource = resourceName => {
 
 const prefetchResource = resourceName => {
   if (resourceName.slice(0, 12) === `component---`) {
-    return Promise.all(
-      createComponentUrls(resourceName).map(url => prefetchHelper(url))
-    )
+    createComponentUrls(resourceName).forEach(url => prefetchHelper(url))
   } else {
     const url = createJsonURL(jsonDataPaths[resourceName])
-    return prefetchHelper(url)
+    prefetchHelper(url)
   }
 }
 
@@ -160,20 +148,17 @@ const handleResourceLoadError = (path, message) => {
 
 const onPrefetchPathname = pathname => {
   if (!prefetchTriggered[pathname]) {
-    apiRunner(`onPrefetchPathname`, { pathname })
+    apiRunner(`onPrefetchPathname`, { pathname: pathname })
     prefetchTriggered[pathname] = true
   }
 }
 
 const onPostPrefetchPathname = pathname => {
   if (!prefetchCompleted[pathname]) {
-    apiRunner(`onPostPrefetchPathname`, { pathname })
+    apiRunner(`onPostPrefetchPathname`, { pathname: pathname })
     prefetchCompleted[pathname] = true
   }
 }
-
-const shouldFallbackTo404Resources = path =>
-  (hasPageResourceMap || inInitialRender) && path !== `/404.html`
 
 // Note we're not actively using the path data atm. There
 // could be future optimizations however around trying to ensure
@@ -203,22 +188,14 @@ const queue = {
   // Hovering on a link is a very strong indication the user is going to
   // click on it soon so let's start prefetching resources for this
   // pathname.
-  hovering: path => {
+  hovering: rawPath => {
+    const path = stripPrefix(rawPath, __PATH_PREFIX__)
     queue.getResourcesForPathname(path)
   },
-  enqueue: path => {
+  enqueue: rawPath => {
+    const path = stripPrefix(rawPath, __PATH_PREFIX__)
     if (!apiRunner)
       console.error(`Run setApiRunnerForLoader() before enqueing paths`)
-
-    // Skip prefetching if we know user is on slow or constrained connection
-    if (`connection` in navigator) {
-      if ((navigator.connection.effectiveType || ``).includes(`2g`)) {
-        return false
-      }
-      if (navigator.connection.saveData) {
-        return false
-      }
-    }
 
     // Tell plugins with custom prefetching logic that they should start
     // prefetching this path.
@@ -241,7 +218,7 @@ const queue = {
     ) {
       // If page wasn't found check and we didn't fetch resources map for
       // all pages, wait for fetch to complete and try find page again
-      return fetchPageResourceMap().then(() => queue.enqueue(path))
+      return fetchPageResourceMap().then(() => queue.enqueue(rawPath))
     }
 
     if (!page) {
@@ -257,14 +234,12 @@ const queue = {
 
     // Prefetch resources.
     if (process.env.NODE_ENV === `production`) {
-      Promise.all([
-        prefetchResource(page.jsonName),
-        prefetchResource(page.componentChunkName),
-      ]).then(() => {
-        // Tell plugins the path has been successfully prefetched
-        onPostPrefetchPathname(path)
-      })
+      prefetchResource(page.jsonName)
+      prefetchResource(page.componentChunkName)
     }
+
+    // Tell plugins the path has been successfully prefetched
+    onPostPrefetchPathname(path)
 
     return true
   },
@@ -287,7 +262,7 @@ const queue = {
     const page = findPage(path)
     if (page) {
       return pathScriptsCache[page.path]
-    } else if (shouldFallbackTo404Resources(path)) {
+    } else if (path !== `/404.html`) {
       return queue.getResourcesForPathnameSync(`/404.html`)
     } else {
       return null
@@ -299,6 +274,9 @@ const queue = {
   // and getting resources for page changes.
   getResourcesForPathname: path =>
     new Promise((resolve, reject) => {
+      const doingInitialRender = inInitialRender
+      inInitialRender = false
+
       // Production code path
       if (failedPaths[path]) {
         handleResourceLoadError(
@@ -326,10 +304,10 @@ const queue = {
       }
 
       if (!page) {
-        if (shouldFallbackTo404Resources(path)) {
-          console.log(`A page wasn't found for "${path}"`)
+        console.log(`A page wasn't found for "${path}"`)
 
-          // Preload the custom 404 page
+        // Preload the custom 404 page
+        if (path !== `/404.html`) {
           resolve(queue.getResourcesForPathname(`/404.html`))
           return
         }
@@ -372,9 +350,6 @@ const queue = {
             page,
             pageResources,
           })
-          // Tell plugins the path has been successfully prefetched
-          onPostPrefetchPathname(path)
-
           resolve(pageResources)
         })
       } else {
@@ -403,20 +378,17 @@ const queue = {
             pageResources,
           })
 
-          // Tell plugins the path has been successfully prefetched
-          onPostPrefetchPathname(path)
+          if (doingInitialRender) {
+            // We got all resources needed for first mount,
+            // we can fetch resoures for all pages.
+            fetchPageResourceMap()
+          }
         })
       }
-    }),
-}
 
-export const postInitialRenderWork = () => {
-  inInitialRender = false
-  if (process.env.NODE_ENV === `production`) {
-    // We got all resources needed for first mount,
-    // we can fetch resoures for all pages.
-    fetchPageResourceMap()
-  }
+      // Tell plugins the path has been successfully prefetched
+      onPostPrefetchPathname(path)
+    }),
 }
 
 export const setApiRunnerForLoader = runner => {

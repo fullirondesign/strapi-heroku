@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { graphql } from 'gatsby';
 // import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import { Mutation } from 'react-apollo'
+import { Mutation } from 'react-apollo';
 
 import { graphql } from 'gatsby';
 import { Query } from 'react-apollo';
@@ -74,7 +74,7 @@ export default class test extends Component {
     
     const { title, content } = this.state;      
     const { character } = this.props.data.rickAndMorty;
-    console.log("character :", character)
+    console.log("character :", character);
     return (
         <div style={{ textAlign: 'center' }}>
         <h1>{character.name} With His Pupper</h1>

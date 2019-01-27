@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
 
 // This query is executed at build time by Gatsby.

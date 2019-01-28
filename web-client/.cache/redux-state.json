@@ -1,22 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "jsonName": "dev-404-page-5f9",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "17dc90137f3ed2ae998e868c22fb8423",
-        "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -471,16 +462,14 @@
       "siteMetadata": {
         "title": "Gatsby With Apollo"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-28T09:41:03.463Z",
+      "buildTime": "2019-01-28T10:27:35.161Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e6722af0ea64a5d96c76185d4a36636f",
+        "contentDigest": "eb22670aa263976d9c46f1e8abb258b3",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -493,7 +482,7 @@
       "children": [],
       "internal": {
         "type": "GraphQLSource",
-        "contentDigest": "a580f7fba817c6b9e9410b69e55b84ae",
+        "contentDigest": "195429a13d95cd1b276c27c4071a104d",
         "ignoreType": true,
         "owner": "gatsby-source-graphql"
       }
@@ -538,26 +527,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /test/": {
-      "jsonName": "test-384",
-      "internalComponentName": "ComponentTest",
-      "path": "/test/",
-      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js",
-      "componentChunkName": "component---src-pages-test-js",
-      "context": {},
-      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
-      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js",
-      "id": "SitePage /test/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "dc50da5cb14664c3099a9a0c22574b50",
-        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
-        "owner": "internal-data-bridge"
-      }
-    },
     "SitePage /posts3/": {
       "jsonName": "posts-3-adc",
       "internalComponentName": "ComponentPosts3",
@@ -574,6 +543,26 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "3defd62a1bcb2af036a26bf72bfd0072",
+        "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /test/": {
+      "jsonName": "test-384",
+      "internalComponentName": "ComponentTest",
+      "path": "/test/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js",
+      "componentChunkName": "component---src-pages-test-js",
+      "context": {},
+      "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js",
+      "id": "SitePage /test/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "dc50da5cb14664c3099a9a0c22574b50",
         "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
         "owner": "internal-data-bridge"
       }
@@ -615,10 +604,6 @@
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js": {
       "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesTestJs1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js"
-    },
-    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js": {
-      "query": "",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/.cache/dev-404-page.js"
     },
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts3.js": {
       "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPosts3Js1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",

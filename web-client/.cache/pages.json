@@ -5,11 +5,6 @@
         "path": "/"
     },
     {
-        "componentChunkName": "component---cache-dev-404-page-js",
-        "jsonName": "dev-404-page-5f9",
-        "path": "/dev-404-page/"
-    },
-    {
         "componentChunkName": "component---src-pages-posts-1-js",
         "jsonName": "posts-1-a0f",
         "path": "/posts.1/"

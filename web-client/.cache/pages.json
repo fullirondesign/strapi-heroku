@@ -5,14 +5,19 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
         "componentChunkName": "component---src-pages-posts-1-js",
         "jsonName": "posts-1-a0f",
         "path": "/posts.1/"
     },
     {
-        "componentChunkName": "component---src-pages-posts-js",
-        "jsonName": "posts-0d3",
-        "path": "/posts/"
+        "componentChunkName": "component---src-pages-posts-3-js",
+        "jsonName": "posts-3-adc",
+        "path": "/posts3/"
     },
     {
         "componentChunkName": "component---src-pages-test-js",

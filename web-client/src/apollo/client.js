@@ -5,7 +5,10 @@ export const client = new ApolloClient({
 
   uri: 'https://good-ua.herokuapp.com/graphql',
   
-  fetch
+  fetch,
+    fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 // //   uri: 'http://localhost:1337/graphql',

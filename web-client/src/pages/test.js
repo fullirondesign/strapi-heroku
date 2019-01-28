@@ -166,7 +166,7 @@ export default class test extends Component {
                             </div>
                             <div className="post-inner" />
     
-                            {post.content}
+                            {/* {post.content} */}
                           </div>
                         </div>
                       </div>

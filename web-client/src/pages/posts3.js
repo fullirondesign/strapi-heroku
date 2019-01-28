@@ -17,19 +17,17 @@ export const GatsbyQuery = graphql`
 `;
 
 // This query is executed at run time by Apollo.
-const APOLLO_QUERY = gql`
-  query POSTS {
-    posts {
-      _id
-      content
-      title
-      createdAt
 
-      cover {
-        public_id
-      }
+const APOLLO_QUERY = gql`
+query POSTS {
+  posts {
+    _id
+    content
+    cover {
+      public_id
     }
   }
+}
 `;
 
 export default ({

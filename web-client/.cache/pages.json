@@ -10,9 +10,9 @@
         "path": "/posts.1/"
     },
     {
-        "componentChunkName": "component---src-pages-posts-js",
-        "jsonName": "posts-0d3",
-        "path": "/posts/"
+        "componentChunkName": "component---src-pages-posts-3-js",
+        "jsonName": "posts-3-adc",
+        "path": "/posts3/"
     },
     {
         "componentChunkName": "component---src-pages-test-js",

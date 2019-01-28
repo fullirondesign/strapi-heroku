@@ -464,12 +464,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-01-27T16:06:27.716Z",
+      "buildTime": "2019-01-28T10:27:35.161Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0821a5041d58b19a4c47ca965a5877eb",
+        "contentDigest": "eb22670aa263976d9c46f1e8abb258b3",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -482,7 +482,7 @@
       "children": [],
       "internal": {
         "type": "GraphQLSource",
-        "contentDigest": "23ccfa31051398bdaf1c9f0ee23acb8f",
+        "contentDigest": "195429a13d95cd1b276c27c4071a104d",
         "ignoreType": true,
         "owner": "gatsby-source-graphql"
       }
@@ -527,22 +527,22 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /posts/": {
-      "jsonName": "posts-0d3",
-      "internalComponentName": "ComponentPosts",
-      "path": "/posts/",
-      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts.js",
-      "componentChunkName": "component---src-pages-posts-js",
+    "SitePage /posts3/": {
+      "jsonName": "posts-3-adc",
+      "internalComponentName": "ComponentPosts3",
+      "path": "/posts3/",
+      "component": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts3.js",
+      "componentChunkName": "component---src-pages-posts-3-js",
       "context": {},
       "pluginCreator___NODE": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
       "pluginCreatorId": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts.js",
-      "id": "SitePage /posts/",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts3.js",
+      "id": "SitePage /posts3/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "213d66dca04b09f8886958b3bdffea1d",
+        "contentDigest": "3defd62a1bcb2af036a26bf72bfd0072",
         "description": "79ca699c-62ad-53f8-a3f8-c58f2fb26d07",
         "owner": "internal-data-bridge"
       }
@@ -578,7 +578,8 @@
         "/posts.1/",
         "/",
         "/posts/",
-        "/test/"
+        "/test/",
+        "/posts3/"
       ]
     },
     "connections": {}
@@ -587,7 +588,9 @@
     "test-384": "978/path---test-384-878-fx5yWPaqzNarvnJjYBByYwYu4",
     "posts-0d3": "257/path---posts-0-d-3-d29-fx5yWPaqzNarvnJjYBByYwYu4",
     "index": "967/path---index-6a9-fx5yWPaqzNarvnJjYBByYwYu4",
-    "posts-1-a0f": "706/path---posts-1-a-0-f-31c-fx5yWPaqzNarvnJjYBByYwYu4"
+    "posts-1-a0f": "706/path---posts-1-a-0-f-31c-fx5yWPaqzNarvnJjYBByYwYu4",
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "posts-3-adc": "848/path---posts-3-adc-a44-fx5yWPaqzNarvnJjYBByYwYu4"
   },
   "components": {
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/index.js": {
@@ -598,13 +601,13 @@
       "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPosts1Js1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts.1.js"
     },
-    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts.js": {
-      "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPostsJs1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",
-      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts.js"
-    },
     "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js": {
       "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesTestJs1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",
       "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/test.js"
+    },
+    "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts3.js": {
+      "query": "query cUsersIlyafefelovDropboxCodeStrapiHerokuGoodUaWebClientSrcPagesPosts3Js1142989098 {\n  rickAndMorty {\n    character(id: 1) {\n      name\n      image\n    }\n  }\n}\n",
+      "componentPath": "C:/Users/ilyafefelov/Dropbox/Code/strapi-heroku/good-ua/web-client/src/pages/posts3.js"
     }
   },
   "staticQueryComponents": {}
